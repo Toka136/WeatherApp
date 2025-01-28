@@ -1,0 +1,172 @@
+.mainpage
+{
+    width: 100%;
+    /* margin-left: 10%; */
+    background-image: url('/public/weather2.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 1px;
+    padding-bottom: 15px;
+}
+.title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.title h1
+{
+    text-transform: capitalize;
+    width: 40%;
+    color: white;
+    text-align: center;
+
+}
+.search
+{
+    width: 40%;
+    margin: 2% auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.search input{
+    border: none !important;
+}
+.search input:focus
+{
+    box-shadow: none !important;
+}
+.temp
+{
+    text-align: center;
+}
+.temp p
+{
+    font-size: 45px;
+    font-weight: 600;
+}
+.temp span
+{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.icon
+{
+    text-align: center;
+}
+.icon img
+{
+    width: 80px;
+    height: 80px;
+    
+}
+.forecast-5
+{
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(5,18%);
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.forecastmain
+{
+    background-color: #9c4621 ;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.forecastmain p:nth-child(1)
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.forecastmain img
+{
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+.forecastmain p:nth-child(3)
+{
+    font-weight: 600;
+    color: white;
+}
+.forecastmain span
+{
+    color: white;
+}
+.search form button{
+    font-weight: 600;
+    color:#9c4621 !important;
+    /* color: white !important; */
+    border:none !important;
+}
+.search form button:hover
+{
+    background: none !important;
+}
+@media(max-width:1023px)
+{
+    .forecast-5
+    {
+        grid-template-columns: 40% 40%;
+        row-gap: 20px;
+        /* column-gap: 30px; */
+       
+    }
+    .search
+    {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:1023px)
+{
+    .forecast-5
+    {
+        width: 90%;
+        margin-left: 5%;
+        grid-template-columns: 48% 48%;
+       
+       
+    }
+}
+@media(max-width:424px)
+{
+    .forecast-5
+    {
+        grid-template-columns: 80%;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .search
+    {
+        width: 80%;
+    }
+    .search form
+    {
+        flex-direction: column !important;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .search .button-show
+    {
+        text-align: center;
+    }
+    .search form button{
+        width: 40%;
+    }
+}
